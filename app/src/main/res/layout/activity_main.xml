@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:id="@+id/my_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="-3dp"
+        android:progress="20"
+        android:visibility="gone"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/my_wv"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativelayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nonet"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/iv_nonet"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_nonet"
+            android:text="No Internet Connection"
+            android:layout_below="@+id/iv_nonet"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Retry"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_below="@+id/tv_nonet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:id="@+id/btn_nonet"/>
+
+    </RelativeLayout>
+</LinearLayout>
